@@ -1,14 +1,56 @@
-body {
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+.bg-img{
+
+    background-image: url('./flag.jpg');
+    
+        /* Add the blur effect */
+        filter: blur(8px);
+        -webkit-filter: blur(3px);
+        height: 100%;
+    
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+   
+
+
+}
+
+/* h1 {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: blueviolet;
-}
+} */
 
 #countdown {
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
-    color:maroon;
+    
+    background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Black w/opacity/see-through */
+        color: white;
+        font-weight: bold;
+        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 80%;
+        padding: 20px;
+        text-align: center;
+    
 }
